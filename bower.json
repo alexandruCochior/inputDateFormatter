@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "main": [
   	"src/module.js",
-    "src/filters/six-numbers-to-date.js",
+    "src/filters/date-formatter-filter.js",
     "src/directives/input-date-formatter.js"
   ],
   "ignore": [

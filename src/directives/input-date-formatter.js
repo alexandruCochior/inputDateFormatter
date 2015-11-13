@@ -2,12 +2,12 @@
 
 /**
  * @ngdoc directive
- * @name tmClientApplicationApp.directive:inputDateFormatter
+ * @name inputDateFormatter.directive:inputDateFormatter
  * @description
  * # inputDateFormatter
  */
-angular.module('tmClientApplicationApp')
-    .directive('inputDateFormatter', function ($compile, $filter) {
+angular.module('inputDateFormatter')
+    .directive('inputDateFormatter', function ($filter) {
         return {
             template: '',
             restrict: 'A',
@@ -27,7 +27,7 @@ angular.module('tmClientApplicationApp')
                     
                     if (isNumber) {
                         $(this).val(
-                                $filter('sixNumbersToDate')(inputValue)
+                                $filter('dateFormatterFilter')(inputValue)
                             );
                     } else {
                         $(this).val('');
