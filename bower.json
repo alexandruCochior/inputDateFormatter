@@ -1,0 +1,37 @@
+{
+  "name": "input-date-formatter",
+  "version": "0.1.0",
+  "main": [
+  	"src/module.js",
+    "src/filters/six-numbers-to-date.js",
+    "src/directives/input-date-formatter.js"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "test",
+    "karma.conf.js",
+    "bower_components",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1"
+  },
+  "devDependencies": {},
+  "homepage": "",
+  "authors": [
+    {
+      "name": "Alexandru Constantin Cochior",
+      "email": "ac.cochior@contur.it"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "",
+  "keywords": "",
+  "license": "",
+  "srcPath": "src"
+}
