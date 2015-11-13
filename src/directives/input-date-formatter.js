@@ -2,11 +2,11 @@
 
 /**
  * @ngdoc directive
- * @name inputDateFormatter.directive:inputDateFormatter
+ * @name tmClientApplicationApp.directive:inputDateFormatter
  * @description
  * # inputDateFormatter
  */
-angular.module('inputDateFormatter')
+angular.module('tmClientApplicationApp')
     .directive('inputDateFormatter', function ($compile, $filter) {
         return {
             template: '',
@@ -15,11 +15,8 @@ angular.module('inputDateFormatter')
             link: function postLink(scope, element, attrs) {
                 /**
                  * The filter is applied on tab press.
-                 * Check if the input value has these characteristics:
-                 *  - Is a number
-                 *  - It consists of 6 characters
-                 *  
-                 *  If so apply the filter, otherwise cancels the input
+                 * Check if the input value is a number and
+                 * if so applies the filter, otherwise cancels the input
                  * 
                  * @return void
                  */
@@ -27,14 +24,16 @@ angular.module('inputDateFormatter')
                     var inputValue = $(this).val();
                     
                     var isNumber = !isNaN(parseInt(inputValue));
-                    if (isNumber && 6 === inputValue.length) {
+                    
+                    if (isNumber) {
                         $(this).val(
-                            $filter('sixNumbersToDate')(inputValue)
-                        );
+                                $filter('sixNumbersToDate')(inputValue)
+                            );
                     } else {
                         $(this).val('');
                     }
                 });
+                
             }
         };
     });

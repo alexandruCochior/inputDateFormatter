@@ -1,6 +1,6 @@
 {
   "name": "input-date-formatter",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": [
   	"src/module.js",
     "src/filters/six-numbers-to-date.js",

@@ -7,7 +7,7 @@ ___
 
 Introduction
 ------------
-This module consists of a directory, which formats a 6-digit number typed into an input in a date format dd / mm / yyyy
+This module consists of a directory, which formats a not formatted number typed into an input in a date format dd / mm / yyyy
 
 ___
 ___
@@ -17,7 +17,11 @@ Installation
 ------------
 You can install the plugin by running the command below.
 ```
-bower install --save inputDateFormatter=https://github.com/alexandruCochior/inputDateFormatter.git
+bower install --save inputDateFormatter=https://github.com/alexandruCochior/inputDateFormatter.git#0.2.0
+```
+Or if you want the last version without the 5 digit recognition.
+```
+bower install --save inputDateFormatter=https://github.com/alexandruCochior/inputDateFormatter.git#0.1.0
 ```
 ___
 ___
